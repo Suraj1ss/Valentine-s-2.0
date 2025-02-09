@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>💕 Valentine's Special 💕</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>💕 Welcome to Valentine's Day Special 💕</h1>
+    </header>
+
+    <div class="container">
+
+        <!-- Countdown Timer -->
+        <section id="countdown">
+            <h2>⏳ Valentine's Countdown ⏳</h2>
+            <p id="timer"></p>
+        </section>
+
+        <!-- Love Quotes -->
+        <section id="quotes">
+            <h2>💖 Love Quotes 💖</h2>
+            <p id="quote">Click below for a sweet quote!</p>
+            <button onclick="generateQuote()">New Quote</button>
+        </section>
+
+        <!-- Love Message Generator -->
+        <section id="message-generator">
+            <h2>💌 Love Message Generator 💌</h2>
+            <button onclick="generateMessage()">Generate Message</button>
+            <p id="love-message"></p>
+        </section>
+
+        <!-- Send SMS -->
+        <section id="send-sms">
+            <h2>📩 Send a Valentine's Message 📩</h2>
+            <input type="tel" id="phone" placeholder="Enter phone number">
+            <textarea id="message" placeholder="Type your message"></textarea>
+            <button onclick="sendSMS()">Send via WhatsApp</button>
+        </section>
+
+        <!-- Chat System -->
+        <section id="chat">
+            <h2>💬 Chat with Your Valentine 💬</h2>
+            <input type="text" id="chatInput" placeholder="Type a message...">
+            <button onclick="sendMessage()">Send</button>
+            <div id="chatBox"></div>
+            <p>Share this link to chat: <span id="chatLink"></span></p>
+        </section>
+
+    </div>
+
+    <script src="main.js">main.js</script>
+</body>
+</html>
+
+
